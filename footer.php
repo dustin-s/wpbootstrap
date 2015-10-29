@@ -1,12 +1,8 @@
-<hr>
+        </div>
+        <!--/#page-content-container -->
+        <footer></footer>
 
-      <footer>
-        <p>© Company 2012</p>
-      </footer>
+        <?php wp_footer(); ?>
 
-    </div> <!-- /container -->
-
-    <?php wp_footer(); ?>
-
-  </body>
+    </body>
 </html>
