@@ -13,9 +13,4 @@
  * This simple theme was built using the example Bootstrap theme "Basic marketing site" found on the Bootstrap web site http://twitter.github.com/bootstrap/examples/hero.html
  * */
 
-@import url('libs/bootstrap/css/bootstrap.css'); 
-@import url('libs/bootstrap/css/bootstrap-responsive.css'); 
-body { 
-     padding-top: 60px; 
-     padding-bottom: 40px; 
-}
+
