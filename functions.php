@@ -1,6 +1,12 @@
 <?php
 
     include ( dirname(__FILE__) . "/bootstrap_functions.php" );
+    ini_set("display_errors",1);
+    error_reporting(E_ALL);
+
+    function __i($image_url){
+        return get_template_directory_uri() . $image_url;
+    }
 
     function theme_wp_hook() {
         wp_enqueue_style('theme-bootstrap', get_template_directory_uri().'/libs/bootstrap/css/bootstrap.css', array(), false, 'screen,projection');

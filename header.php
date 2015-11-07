@@ -1,7 +1,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title><?php wp_title('|',1,'right'); ?> <?php bloginfo(“name”); ?></title>
+        <title><?php wp_title('|',1,'right'); ?> <?php bloginfo('name'); ?></title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="google" value="notranslate">
 
@@ -31,7 +31,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </a>
-                    <a class="brand" href="<?php echo site_url() . '/' . SITELANG . '/'; ?>" alt="<?php _e(get_bloginfo('name') , 'prisma-bootstrap'); ?>"></a>
+                    <a class="brand" href="<?php echo site_url(); ?>" alt="<?php _e(get_bloginfo('name') , 'prisma-bootstrap'); ?>"></a>
                     <div class="nav-collapse collapse">
                         <ul class="nav social-nav">
                             <li><a target="_blank" href="https://www.facebook.com/pages/Updates-Prisma/555385874609469" alt="<?php _e('Facebook'); ?>"><img width="20" height="22" src="<?php echo __i("/images/nav-facebook.png"); ?>" alt="<?php _e('Facebook'); ?>" /></a></li>
@@ -49,15 +49,9 @@
                             wp_nav_menu( $main_menu );
                             //wp_list_pages(array('title_li' => '', 'exclude' => 666666, 'depth' => 2)); 
                         ?>
-                        <?php if (SITELANG == 'es'){ ?>
-                            <span class="menu-item menu-item-type-post_type menu-item-object-page" style="display:inline-block;padding-top:8px;">
-                                <a href="/en/"><img src="<?php echo __i('images/lang-toggle-en.png'); ?>" width="25" height="13"/></a>
-                            </span>
-                        <?php }else{ ?>
-                            <span class="menu-item menu-item-type-post_type menu-item-object-page" style="display:inline-block;padding-top:8px;">
-                                <a href="/es/"><img src="<?php echo __i('images/lang-toggle-es.png'); ?>" width="23" height="53"/></a>
-                            </span>
-                        <?php } ?>
+                        <span class="menu-item menu-item-type-post_type menu-item-object-page" style="display:inline-block;padding-top:8px;">
+                            <a href="/es/"><img src="<?php echo __i('images/lang-toggle-es.png'); ?>" width="23" height="53"/></a>
+                        </span>
                     </div><!--/.nav-collapse -->
                 </div>
             </div>
